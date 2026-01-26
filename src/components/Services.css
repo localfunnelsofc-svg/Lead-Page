@@ -1,0 +1,79 @@
+.services-section {
+    padding: 100px 0;
+    background-color: var(--deep-navy);
+    text-align: center;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 80px;
+    letter-spacing: -1px;
+}
+
+.cards-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.service-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 380px;
+    padding: 32px;
+    border-radius: 24px;
+    background: rgba(30, 41, 59, 0.4);
+    /* Glass effect inherited from glass-panel or manual */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, border-color 0.3s;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-container {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 24px;
+    font-size: 32px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.card-desc {
+    font-size: 16px;
+    color: var(--muted-gray);
+    line-height: 1.5;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.learn-more {
+    font-weight: 600;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.learn-more:hover {
+    text-decoration: underline;
+}

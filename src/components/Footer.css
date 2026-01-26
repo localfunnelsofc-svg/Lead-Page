@@ -1,0 +1,213 @@
+.footer-section {
+    background-color: #0F172A;
+    background-image: radial-gradient(circle at 50% 50%, rgba(30, 41, 59, 1) 0%, rgba(15, 23, 42, 1) 100%);
+    padding-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding-bottom: 80px;
+}
+
+.footer-text-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.footer-badge {
+    display: inline-block;
+    background-color: rgba(245, 158, 11, 0.1);
+    border: 1px solid rgba(245, 158, 11, 0.3);
+    padding: 6px 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.footer-badge-text {
+    color: var(--secondary-gold);
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.footer-cta-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+
+.footer-cta-desc {
+    font-size: 16px;
+    color: var(--muted-gray);
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
+
+.benefit-text {
+    font-size: 16px;
+    color: var(--soft-white);
+}
+
+.form-card {
+    flex: 1;
+    max-width: 500px;
+    background: rgba(30, 41, 59, 0.6);
+    border-radius: 24px;
+    padding: 32px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px);
+}
+
+.form-header {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0 16px;
+    margin-bottom: 16px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+.input-group:focus-within {
+    border-color: var(--primary-blue);
+    background-color: rgba(56, 189, 248, 0.05);
+}
+
+.input-icon {
+    margin-right: 12px;
+    color: var(--muted-gray);
+    font-size: 20px;
+}
+
+.input-group:focus-within .input-icon {
+    color: var(--primary-blue);
+}
+
+.form-input,
+.form-textarea {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--soft-white);
+    padding: 16px 0;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+}
+
+.form-textarea {
+    resize: vertical;
+    min-height: 80px;
+    padding-top: 16px;
+}
+
+.submit-btn {
+    width: 100%;
+    background-color: var(--secondary-gold);
+    color: #0F172A;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+}
+
+.security-text {
+    font-size: 12px;
+    color: var(--muted-gray);
+    text-align: center;
+    margin-top: 16px;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 32px 0;
+    background-color: #020617;
+}
+
+.footer-bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: var(--muted-gray);
+}
+
+.social-row {
+    display: flex;
+    gap: 16px;
+}
+
+.social-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--soft-white);
+    transition: background 0.2s;
+}
+
+.social-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-text-column,
+    .form-card {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .footer-bottom-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+}

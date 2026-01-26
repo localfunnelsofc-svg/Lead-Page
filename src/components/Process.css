@@ -1,0 +1,90 @@
+.process-section {
+    padding: 100px 0;
+    background-color: var(--deep-navy);
+    border-top: 1px solid var(--glass-border);
+    text-align: center;
+}
+
+.process-title {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.process-subtitle {
+    font-size: 18px;
+    color: var(--muted-gray);
+    margin-bottom: 60px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.steps-grid {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.step-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    min-width: 250px;
+    z-index: 2;
+}
+
+.number-container {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(56, 189, 248, 0.1);
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    position: relative;
+    background-color: var(--deep-navy);
+    /* To hide connector behind */
+}
+
+.step-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.step-desc {
+    font-size: 16px;
+    color: var(--muted-gray);
+    line-height: 1.5;
+}
+
+.connector {
+    flex-grow: 1;
+    height: 2px;
+    background-color: var(--glass-border);
+    margin-top: 30px;
+    /* Align with center of number bubble */
+}
+
+@media (max-width: 768px) {
+    .steps-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .connector {
+        width: 2px;
+        height: 40px;
+        margin: 0;
+        flex-grow: 0;
+    }
+}
