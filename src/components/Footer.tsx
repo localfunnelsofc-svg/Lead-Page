@@ -152,7 +152,9 @@ export const Footer = ({ isMobile }: { isMobile: boolean }) => {
                     </View>
 
                     <View style={[styles.socialRow, isMobile && { marginTop: 20 }]}>
-                        <TouchableOpacity style={styles.socialBtn}><FontAwesome name="instagram" size={20} color={COLORS.softWhite} /></TouchableOpacity>
+                        <TouchableOpacity style={styles.socialBtn} onPress={() => Linking.openURL('https://www.instagram.com/localfunnels.ofc?igsh=MTFieW1rcnl0cGkxMg%3D%3D&utm_source=qr')}>
+                            <FontAwesome name="instagram" size={20} color={COLORS.softWhite} />
+                        </TouchableOpacity>
                         <TouchableOpacity style={styles.socialBtn}><FontAwesome name="linkedin" size={20} color={COLORS.softWhite} /></TouchableOpacity>
                         <TouchableOpacity style={styles.socialBtn}><FontAwesome name="whatsapp" size={20} color={COLORS.softWhite} /></TouchableOpacity>
                     </View>

@@ -19,7 +19,7 @@ export const Hero = () => {
             {/* Decorative Gradients */}
             <View style={styles.backgroundGlow} />
 
-            <View style={[styles.content, { paddingHorizontal: isMobile ? 20 : 40, marginTop: isMobile ? 140 : 120 }]}>
+            <View style={[styles.content, { paddingHorizontal: isMobile ? 20 : 40, marginTop: isMobile ? -10 : -30 }]}>
                 <View style={[styles.textContainer, isMobile && { alignItems: 'center' }]}>
 
                     <View style={styles.badge}>
@@ -118,8 +118,8 @@ const styles = StyleSheet.create({
     },
     ctaButton: {
         backgroundColor: COLORS.primaryBlue,
-        paddingTop: 12,
-        paddingBottom: 26,
+        paddingTop: 8,
+        paddingBottom: 30,
         paddingHorizontal: 32,
         borderRadius: 16,
         shadowColor: COLORS.primaryBlue,
@@ -135,8 +135,8 @@ const styles = StyleSheet.create({
         fontSize: 16,
     },
     secondaryButton: {
-        paddingTop: 12,
-        paddingBottom: 26,
+        paddingTop: 8,
+        paddingBottom: 30,
         paddingHorizontal: 32,
         borderRadius: 16,
         borderWidth: 1,
