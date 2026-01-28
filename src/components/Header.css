@@ -15,7 +15,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
+    /* Aumentado para acomodar a logo maior */
+    padding: 10px 0;
 }
 
 .logo-container {
@@ -25,9 +27,11 @@
 }
 
 .logo-image {
-    height: 70px;
+    height: 150px;
     width: auto;
     transition: transform 0.3s ease;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    /* Sombra para dar destaque/profundidade */
 }
 
 .logo-image:hover {
@@ -38,7 +42,7 @@
     font-size: 24px;
     font-weight: 700;
     color: #fff;
-    margin-left: 12px;
+    margin-left: -20px;
     letter-spacing: -0.5px;
 }
 
@@ -127,5 +131,28 @@
 
     .mobile-menu-btn {
         display: block;
+        z-index: 1001;
+        /* Garantir que fique acima */
+    }
+
+    .header-content {
+        height: 80px;
+        /* Altura menor no mobile */
+    }
+
+    /* Ajuste da logo no mobile para não ocupar tudo */
+    .logo-image {
+        height: 80px;
+    }
+
+    .logo-text-brand {
+        font-size: 20px;
+        margin-left: -10px;
+    }
+
+    .logo-container {
+        position: relative;
+        z-index: 1001;
+        /* Logo acima do menu se abrir */
     }
 }
