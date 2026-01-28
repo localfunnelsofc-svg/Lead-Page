@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { MdPerson, MdCheckCircle, MdLock, MdWeb, MdRocketLaunch, MdArrowForward } from 'react-icons/md';
-import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
 import './Footer.css';
 import logoImg from '../assets/logo.png';
 
@@ -137,10 +137,7 @@ export const Footer = () => {
                         <a href="https://www.instagram.com/localfunnels.ofc" target="_blank" rel="noreferrer" className="social-btn">
                             <FaInstagram size={20} />
                         </a>
-                        <button className="social-btn">
-                            <FaLinkedin size={20} />
-                        </button>
-                        <button className="social-btn">
+                        <button className="social-btn" onClick={handleWhatsAppSubmit}>
                             <FaWhatsapp size={20} />
                         </button>
                     </div>

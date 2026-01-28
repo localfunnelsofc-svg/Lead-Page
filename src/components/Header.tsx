@@ -23,7 +23,7 @@ export const Header = () => {
                 </nav>
 
                 {/* CTA Button */}
-                <button className="cta-button">
+                <button className="cta-button" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                     Consultoria Grátis
                 </button>
 
