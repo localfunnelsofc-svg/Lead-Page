@@ -29,9 +29,7 @@ export const Hero = () => {
                         <button className="btn-primary" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
                             Quero Escalar Meu Faturamento
                         </button>
-                        <button className="btn-secondary">
-                            Ver Nossos Casos de Sucesso
-                        </button>
+
                     </div>
                 </motion.div>
 
