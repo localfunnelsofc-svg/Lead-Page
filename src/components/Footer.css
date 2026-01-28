@@ -19,15 +19,15 @@
 
 .footer-badge {
     display: inline-block;
-    background-color: rgba(245, 158, 11, 0.1);
-    border: 1px solid rgba(245, 158, 11, 0.3);
+    background-color: rgba(230, 92, 0, 0.1);
+    border: 1px solid rgba(230, 92, 0, 0.3);
     padding: 6px 12px;
     border-radius: 8px;
     margin-bottom: 20px;
 }
 
 .footer-badge-text {
-    color: var(--secondary-gold);
+    color: var(--secondary-orange);
     font-weight: 700;
     font-size: 12px;
     letter-spacing: 1px;
@@ -124,7 +124,7 @@
 
 .submit-btn {
     width: 100%;
-    background-color: var(--secondary-gold);
+    background-color: var(--secondary-orange);
     color: #0F172A;
     font-weight: 700;
     font-size: 16px;
@@ -140,7 +140,7 @@
 
 .submit-btn:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.3);
+    box-shadow: 0 4px 12px rgba(230, 92, 0, 0.3);
 }
 
 .security-text {
@@ -170,6 +170,12 @@
 .copyright {
     font-size: 14px;
     color: var(--muted-gray);
+}
+
+.footer-logo-image {
+    height: 35px;
+    width: auto;
+    margin-bottom: 8px;
 }
 
 .social-row {

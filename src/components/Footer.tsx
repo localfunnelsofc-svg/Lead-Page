@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { MdPerson, MdCheckCircle, MdLock, MdWeb, MdRocketLaunch, MdArrowForward } from 'react-icons/md';
 import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import './Footer.css';
+import logoImg from '../assets/logo.png';
 
 export const Footer = () => {
     const [name, setName] = useState('');
@@ -40,7 +41,7 @@ export const Footer = () => {
                     </div>
 
                     <h2 className="footer-cta-title">
-                        Pronto para <span style={{ color: 'var(--secondary-gold)' }}>Dobrar seu Faturamento?</span>
+                        Pronto para <span style={{ color: 'var(--secondary-orange)' }}>Dobrar seu Faturamento?</span>
                     </h2>
 
                     <p className="footer-cta-desc">
@@ -58,7 +59,7 @@ export const Footer = () => {
                         </div>
                         <div className="benefit-item">
                             <MdCheckCircle size={20} color="var(--primary-blue)" />
-                            <span className="benefit-text">Sessão de Diagnóstico de 30min</span>
+                            <span className="benefit-text">Sessão de Diagnóstico de 15min</span>
                         </div>
                     </div>
                 </div>
@@ -125,10 +126,8 @@ export const Footer = () => {
             <div className="footer-bottom">
                 <div className="container footer-bottom-content">
                     <div>
-                        <div className="logo-text" style={{ fontSize: '20px', marginBottom: '4px' }}>
-                            Funnel<span className="logo-highlight">Core</span>
-                        </div>
-                        <p className="copyright">© 2026 FunnelCore. Todos os direitos reservados.</p>
+                        <img src={logoImg} alt="LocalFunnels" className="footer-logo-image" />
+                        <p className="copyright">© 2026 LocalFunnels. Todos os direitos reservados.</p>
                     </div>
 
                     <div className="social-row">

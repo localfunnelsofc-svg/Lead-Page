@@ -61,7 +61,7 @@
 }
 
 .headline .highlight {
-    color: var(--secondary-gold);
+    color: var(--secondary-orange);
 }
 
 .subheadline {
@@ -138,7 +138,7 @@
     width: 300px;
     height: 300px;
     border-width: 40px;
-    border-color: var(--secondary-gold);
+    border-color: var(--secondary-orange);
     top: 100px;
     right: 100px;
 }

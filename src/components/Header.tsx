@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './Header.css';
 import { MdMenu, MdClose } from 'react-icons/md';
+import logoImg from '../assets/logo.png';
 
 export const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,12 +11,7 @@ export const Header = () => {
             <div className="container header-content">
                 {/* Logo */}
                 <div className="logo-container">
-                    <div className="logo-icon">
-                        <span>🚀</span>
-                    </div>
-                    <span className="logo-text">
-                        Funnel<span className="logo-highlight">Core</span>
-                    </span>
+                    <img src={logoImg} alt="LocalFunnels" className="logo-image" />
                 </div>
 
                 {/* Desktop Navigation */}
