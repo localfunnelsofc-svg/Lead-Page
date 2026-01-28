@@ -125,8 +125,11 @@ export const Footer = () => {
             {/* Bottom Footer */}
             <div className="footer-bottom">
                 <div className="container footer-bottom-content">
-                    <div>
-                        <img src={logoImg} alt="LocalFunnels" className="footer-logo-image" />
+                    <div className="footer-brand-container">
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '8px' }}>
+                            <img src={logoImg} alt="LocalFunnels" className="footer-logo-image" />
+                            <span className="logo-text-brand" style={{ fontSize: '24px' }}>Local<span className="logo-highlight">Funnels</span></span>
+                        </div>
                         <p className="copyright">© 2026 LocalFunnels. Todos os direitos reservados.</p>
                     </div>
 

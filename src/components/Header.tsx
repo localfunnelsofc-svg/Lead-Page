@@ -12,6 +12,7 @@ export const Header = () => {
                 {/* Logo */}
                 <div className="logo-container">
                     <img src={logoImg} alt="LocalFunnels" className="logo-image" />
+                    <span className="logo-text-brand">Local<span className="logo-highlight">Funnels</span></span>
                 </div>
 
                 {/* Desktop Navigation */}

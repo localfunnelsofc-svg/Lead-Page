@@ -25,8 +25,25 @@
 }
 
 .logo-image {
-    height: 45px;
+    height: 70px;
     width: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo-image:hover {
+    transform: scale(1.1);
+}
+
+.logo-text-brand {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+    margin-left: 12px;
+    letter-spacing: -0.5px;
+}
+
+.logo-highlight {
+    color: var(--secondary-orange);
 }
 
 .nav-links {
