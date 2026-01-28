@@ -18,23 +18,17 @@ export const Services = () => {
                         <p className="card-desc">
                             Seja encontrado por clientes na sua região no momento exato em que eles procuram pelo seu serviço no Google e Redes Sociais.
                         </p>
-                        <button className="learn-more" style={{ color: '#38BDF8' }}>
-                            Saiba mais →
-                        </button>
                     </div>
 
                     {/* Card 2: Tráfego Pago */}
-                    <div className="service-card glass-panel" style={{ borderColor: 'rgba(245, 158, 11, 0.4)' }}>
-                        <div className="icon-container" style={{ backgroundColor: 'rgba(245, 158, 11, 0.2)', color: '#F59E0B' }}>
+                    <div className="service-card glass-panel" style={{ borderColor: 'rgba(230, 92, 0, 0.4)' }}>
+                        <div className="icon-container" style={{ backgroundColor: 'rgba(230, 92, 0, 0.2)', color: '#E65C00' }}>
                             <FaChartLine />
                         </div>
                         <h3 className="card-title">Tráfego Pago</h3>
                         <p className="card-desc">
                             Campanhas de alta performance no Facebook, Instagram e Google Ads focadas em ROI e escala previsível de faturamento.
                         </p>
-                        <button className="learn-more" style={{ color: '#F59E0B' }}>
-                            Saiba mais →
-                        </button>
                     </div>
 
                     {/* Card 3: Web Design */}
@@ -46,9 +40,6 @@ export const Services = () => {
                         <p className="card-desc">
                             Sites modernos, velozes e otimizados para conversão. Transforme visitantes em leads qualificados com um design premium.
                         </p>
-                        <button className="learn-more" style={{ color: '#38BDF8' }}>
-                            Saiba mais →
-                        </button>
                     </div>
                 </div>
             </div>
